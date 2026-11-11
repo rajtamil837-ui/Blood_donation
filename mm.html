@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://media.istockphoto.com/id/1320162065/vector/blood-cells-red-erythrocytes.jpg?s=612x612&w=0&k=20&c=rX8kGwiOsHW-V-BOal3Cf6ADKdjx_U5snDdykya0jbs.jpg'); /* Add your background image URL here */
+            background-size: cover; /* Ensures the background image covers the entire page */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 150px;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        .app-name {
+            font-size: 28px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://t3.ftcdn.net/jpg/03/19/24/60/360_F_319246034_4oCnJSWVYzji1g5DRAiWam7iKlv5OJTJ.jpg" alt="Logo" class="logo" id="logo">
+        <div class="app-name" id="appName">Blood Care</div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("logo").style.opacity = "0"; // Fade out logo
+            setTimeout(() => {
+                document.getElementById("logo").style.display = "none"; // Remove logo
+                document.getElementById("appName").style.opacity = "1"; // Fade in app name
+                setTimeout(() => {
+                    document.getElementById("appName").style.opacity = "0"; // Fade out app name
+                    
+                    // Redirect to home.html after app name disappears
+                    setTimeout(() => {
+                        window.location.href = "intex.html"; // Redirect to home page
+                    }, 1000);
+
+                }, 2000); // App name stays for 2 seconds
+            }, 1000);
+        }, 2000); // Logo stays for 2 seconds
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        .donor-list {
+            width: 100%;
+            max-width: 700px;
+        }
+        .donor-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .donor-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .donor-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .blood-type {
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+        }
+        .contact-btn {
+            background-color: green;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .contact-btn:hover {
+            background-color: darkgreen;
+        }
+        .status {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .available {
+            background-color: #28a745;
+            color: white;
+        }
+        .not-available {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Available Blood Donors</h2>
+
+    <div class="donor-list">
+
+        <div class="donor-card">
+            <div class="donor-info">
+                <span class="donor-name">Rajesh kanna</span>
+                <span>Age: 19</span>
+                <span>Location: Ramanathapuram</span>
+                <span>Last Donation: Jan 10, 2024</span>
+                <span>Phone: +918056121668</span>
+            </div>
+            <span class="blood-type">B+</span>
+            <span class="status available">Available</span>
+            <button class="contact-btn">Contact</button>
+        </div>
+
+        <div class="donor-card">
+            <div class="donor-info">
+                <span class="donor-name">Rajasakthivel</span>
+                <span>Age: 19</span>
+                <span>Location: Madurai</span>
+                <span>Last Donation: Dec 25, 2023</span>
+                <span>Phone: +919363889008</span>
+            </div>
+            <span class="blood-type">O+</span>
+            <span class="status not-available">Not Available</span>
+            <button class="contact-btn">Contact</button>
+        </div>
+
+        <div class="donor-card">
+            <div class="donor-info">
+                <span class="donor-name">Arunpandi</span>
+                <span>Age: 26</span>
+                <span>Location: Madurai</span>
+                <span>Last Donation: Feb 5, 2024</span>
+                <span>Phone: +917868018197</span>
+            </div>
+            <span class="blood-type">B-</span>
+            <span class="status available">Available</span>
+            <button class="contact-btn">Contact</button>
+        </div>
+
+        <div class="donor-card">
+            <div class="donor-info">
+                <span class="donor-name">Sanjay</span>
+                <span>Age: 21</span>
+                <span>Location: Madurai</span>
+                <span>Last Donation: Nov 15, 2023</span>
+                <span>Phone: +919600258698</span>
+            </div>
+            <div class="donor-card">
+                <div class="donor-info">
+                    <span class="donor-name">Saradha</span>
+                    <span>Age: 21</span>
+                    <span>Location: Madurai</span>
+                    <span>Last Donation: Nov 17, 2023</span>
+                    <span>Phone: +91957488484</span>
+                </div>
+                <div class="donor-card">
+                    <div class="donor-info">
+                        <span class="donor-name">Sagana devi</span>
+                        <span>Age: 21</span>
+                        <span>Location: Kodai</span>
+                        <span>Last Donation: Nov 17, 2025</span>
+                        <span>Phone: +91957688484</span>
+                    </div>
+                    <div class="donor-card">
+                        <div class="donor-info">
+                            <span class="donor-name">Rajeshwari</span>
+                            <span>Age: 23</span>
+                            <span>Location: Madurai</span>
+                            <span>Last Donation: Nov 19, 2023</span>
+                            <span>Phone: +91957488454</span>
+                        </div>
+            <span class="blood-type">A+</span>
+            <span class="status not-available">Not Available</span>
+            <button class="contact-btn">Contact</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

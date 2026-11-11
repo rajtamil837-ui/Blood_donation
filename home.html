@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightred;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        #logo {
+            width: 150px;
+            display: block;
+        }
+        #app-name {
+            font-size: 24px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="C:\Users\NEXT GEN\Downloads\photo_6217629640101577520_x.jpg" alt="App Logo">
+        <div id="app-name">Blood Care</div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("logo").style.display = "none";
+            document.getElementById("app-name").style.display = "block";
+
+            // After 2 more seconds, redirect to home.html
+            setTimeout(() => {
+                window.location.href = "intex.html"; // Change to your home page filename
+            }, 2000);
+        }, 2000);
+    </script>
+</body>
+</html>

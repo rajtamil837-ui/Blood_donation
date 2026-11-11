@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .success-message {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .check-icon {
+            color: green;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showSuccessMessage()">Register for Blood care</button>
+
+<div id="successMessage" class="success-message">
+    <i class="fas fa-check-circle check-icon"></i>
+    Successfully Registered!
+</div>
+
+<script>
+    function showSuccessMessage() {
+        document.getElementById("successMessage").style.display = "flex";
+    }
+</script>
+
+</body>
+</html>
